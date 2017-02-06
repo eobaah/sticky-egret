@@ -17,29 +17,30 @@ Creating this web application will provide exposure to:
 
 
 ## Specifications (100% total) [Github](https://github.com/eobaah/guarded-porcupine)
-- [ ] Wireframe of app that puts thought into excellent user experience to be implemented. Research existing blog websites that look and work great, or that are totally out-of-the-box design wise, then sketch (by hand or use a tool like Balsamiq ) your app's look and functionality, page by page. Have fun making it yours! (2.5%)
-- [ ] Optimize your assets on the front-end (your images should be web-ready, for example) (2.5%)
+- [ ] Make a wireframe of app (5%)
 - [ ] Use responsive design principles (make it mobile first!)(5%)
 
-User should be able to: (10%)
-- [ ] See an excerpt of all or a selection of the latest blog posts on front/home page - excerpt may include blog post title, photo, description or except of main text, etc.
-- [ ] Click on a specific blog post except to be taken to the full blog post.
-- [ ] Navigate back to the home page at any time.
+User should be able to:
+- [ ] See a feed of recent blog posts. (3%)
+- [ ] Click on a specific blog post excerpt to be taken to the full blog post. (3%)
+- [ ] Each blog post should have a title, author, summary/caption, blog text, picture (optional), date published/updated, tags, and comments. (4%)
 
 ### Required
-- [ ] Edit blog post (20%)
-- [ ] Delete blog post (20%)
+- [ ] Edit blog post by clicking a button (20%)
+- [ ] Delete blog post by clicking a button (20%)
 - [ ] Add a new blog post from a front-end user interface (20%)
 - [ ] User can add comments to a blog post (20%)
 - [ ] The artifact produced is properly licensed, preferably with the  [MIT license](https://opensource.org/licenses/MIT).
 
 ## Quality Rubric (100% total)
 - [ ] Provide instructions for a reviewer to download a fully functioning version of the app (10%)
-- Submit a Prrr per day to improve code quality (10%)
-- All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
-- Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
-- Code is well organized into a meaningful file  structure (20%)
-- Interface is user friendly (20%)
+- [ ] Submit a Prrr per day to improve code quality (10%)
+- [ ] All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
+- [ ] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
+- [ ]Code is well organized into a meaningful file  structure (20%)
+- [ ]Interface is user friendly (10%)
+- [ ]Create tests to ensure routes are fully functioning (5%)
+- [ ]Create tests to ensure our database queries are able to retrieve all posts (5%)
 
 ## Resources
 Below, a set of recommended tutorials on Treehouse that take you through most of this process:
