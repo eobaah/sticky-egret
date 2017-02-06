@@ -42,7 +42,6 @@ User should be able to: (10%)
 - Interface is user friendly (20%)
 
 ## Resources
-
 Below, a set of recommended tutorials on Treehouse that take you through most of this process:
 
 Prework: [Node.js Basics](https://teamtreehouse.com/library/nodejs-basics), [NPM Basics](https://teamtreehouse.com/library/express-basics)
