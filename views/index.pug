@@ -3,3 +3,15 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  for post in posts
+    .blogContainer
+      .blogHeader
+        h2= post.title
+        p= normalizeDate(post.post_date)
+      .textBody
+        p= post.content
+      .imageContainer
+        img( src=post.image_url)
+      .tagContainer
+        p= post.tags
+        p= post.comments
