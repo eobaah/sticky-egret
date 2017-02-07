@@ -3,6 +3,36 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  span#start.target
+
+  span#about.target
+
+  .modal
+    .content.vertical-align-middle
+      form.createPost(action='/create' method='POST')
+        header
+          h1 Create new post
+        .formFields
+          label Title
+          input.createInput(type='text', name='title', value='title')
+          label Caption
+          textarea.createInput(rows='4', name='Caption', value='caption')
+          label Content
+          textarea.createInput(rows='4', name='Content', value='content')
+          label Image
+          input.createInput(type='text', name='image', value='image_url')
+          label Tags
+          input.createInput(type='text', name='image', value='tags')
+        footer
+          input(type='submit', value='Submit')
+      a.close-btn(href='#start') X
+  .page-container
+    h1 Lorem ipsum dolor sit amet,
+    p
+      a(href='#about') Create post
+      |  Paleo meh flexitarian street art elit gentrify, iPhone williamsburg cardigan pitchfork blue bottle. Dolor semiotics freegan, umami before they sold out XOXO post-ironic fanny pack. Try-hard shoreditch austin exercitation accusamus nihil, church-key hexagon seitan nesciunt vice swag sriracha. Enamel pin veniam non, gochujang pour-over lumbersexual yr tbh. Migas keytar crucifix direct trade. Selfies mustache chicharrones enim bicycle rights exercitation. Banjo vice bitters mumblecore, sed fingerstache shabby chic cold-pressed proident quinoa blog.
+
   for post in posts
     .blogContainer
       .blogHeader
