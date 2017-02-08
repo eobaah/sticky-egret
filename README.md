@@ -21,16 +21,16 @@ Creating this web application will provide exposure to:
 - [ ] Use responsive design principles (make it mobile first!)(5%)
 
 User should be able to:
-- [ ] See a feed of recent blog posts. (3%)
+- [X] See a feed of recent blog posts. (3%)
 - [ ] Click on a specific blog post excerpt to be taken to the full blog post. (3%)
-- [ ] Each blog post should have a title, author, summary/caption, blog text, picture (optional), date published/updated, tags, and comments. (4%)
+- [X] Each blog post should have a title, author, summary/caption, blog text, picture (optional), date published/updated, tags, and comments. (4%)
 
 ### Required
-- [ ] Edit blog post by clicking a button (20%)
-- [ ] Delete blog post by clicking a button (20%)
-- [ ] Add a new blog post from a front-end user interface (20%)
+- [X] Edit blog post by clicking a button (20%)
+- [X] Delete blog post by clicking a button (20%)
+- [X] Add a new blog post from a front-end user interface (20%)
 - [ ] User can add comments to a blog post (20%)
-- [ ] The artifact produced is properly licensed, preferably with the  [MIT license](https://opensource.org/licenses/MIT).
+- [X] The artifact produced is properly licensed, preferably with the  [MIT license](https://opensource.org/licenses/MIT).
 
 ## Quality Rubric (100% total)
 - [ ] Provide instructions for a reviewer to download a fully functioning version of the app (10%)

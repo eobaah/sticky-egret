@@ -9,6 +9,26 @@ body {
   flex-direction: column;
 }
 
+.buttonControls {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa.fa-trash-o {
+  cursor: pointer;
+}
+.buttonControls .fa {
+  margin-right: 1%;
+}
+.imageContainer img {
+  width: 300px;
+  height: 200px;
+}
 .createInput {
   margin: 3% 0;
 }

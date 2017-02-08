@@ -23,6 +23,7 @@ const normalizeDate = (date) =>{
 
 router.post( '/create', ( req, res, next ) => {
   const post = req.body
+  console.log(post);
   createPost(post)
     .then( () => res.redirect('/'))
 })
