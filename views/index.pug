@@ -26,8 +26,8 @@ block content
           button(type='submit', value='Submit' formmethod='post')
 
   for post in posts
-    .blogContainer
-      .blogHeader(id=`blogEntry${post.id}`)
+    .postContainer
+      .postHeader(id=`blogEntry${post.id}`)
         h2= post.title
         p= normalizeDate(post.post_date)
       .textBody
