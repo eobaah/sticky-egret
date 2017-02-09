@@ -1,7 +1,32 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 
+.topNavigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.topNavigation li {
+  list-style: none;
+}
+
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sideBlog {
+  order: 1;
+  width: 30%;
+}
+.mainBlog {
+  flex-grow: 3;
+  width: 70%;
+  margin-right: 2%;
 }
 
 .modalPost {
@@ -91,3 +116,7 @@ a {
     }
 
     .close:hover { background: #00d9ff; }
+
+.navBar {
+  color: red;
+}
