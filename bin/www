@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../src/components/app');
 var debug = require('debug')('sticky-egret:server');
 var http = require('http');
 

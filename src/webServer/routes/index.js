@@ -1,7 +1,7 @@
 const express = require( 'express' );
 const router = express.Router();
 const path = require( 'path' )
-const { db, getAllPosts, getPost, createPost, editPost, deletePost } = require( '../database' )
+const { db, getAllPosts, getPost, createPost, editPost, deletePost } = require( '../dataServices/database' )
 const moment = require( 'moment' )
 
 

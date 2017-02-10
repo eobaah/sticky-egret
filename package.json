@@ -3,20 +3,35 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npm run server & npm run webpack",
+    "initialize": "npm i & createdb sticky-egret-db & psql sticky-egret-db < schema.sql",
+    "webpack": "webpack --progress --colors --watch",
+    "server": "nodemon ./bin/www --exec babel-node"
   },
   "dependencies": {
-    "bluebird": "^3.4.7",
-    "body-parser": "~1.16.0",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.22.0",
+    "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.0",
-    "express": "~4.14.1",
-    "moment": "^2.17.1",
-    "morgan": "^1.7.0",
+    "debug": "~2.2.0",
+    "elemental": "^0.6.1",
+    "express": "~4.14.0",
+    "jquery": "^3.1.1",
+    "morgan": "~1.7.0",
     "nodemon": "^1.11.0",
     "path": "^0.12.7",
     "pg-promise": "^5.5.6",
-    "pug": "~2.0.0-beta10",
-    "serve-favicon": "~2.3.2"
+    "pug": "~2.0.0-beta6",
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-css-transition-replace": "^2.1.0",
+    "react-dom": "^15.4.2",
+    "react-fontawesome": "^1.5.0",
+    "react-modal": "^1.6.5",
+    "webpack": "^2.2.1"
   }
 }
