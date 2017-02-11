@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
-import { Modal, Button } from 'elemental'
+import Modal from './Modal.jsx'
 
 export default class ModalCreatePost extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = { isModalOpen: false }
+  }
+
   render() {
     return (
-      <div id="openModal1" className="modalDialog">
+      <div>
+      <i className="fa fa-pencil-square-o" onClick={() => this.openModal()} />
+      <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
+      <div id="openModal1">
         <div className="modalPost">
-          <a className="close" href='close' title='Close'> X </a>
+          <a onClick={() => this.closeModal()}> X </a>
           <form action='/create' method='POST'>
             <div className="formFields">
               <label> Title </label>
@@ -26,6 +35,16 @@ export default class ModalCreatePost extends Component {
           </form>
         </div>
       </div>
+      <p><button onClick={() => this.closeModal()}> Close </button></p>
+    </Modal>
+    </div>
     )
+  }
+  openModal() {
+    this.setState({ isModalOpen: true })
+  }
+
+  closeModal() {
+    this.setState({ isModalOpen: false })
   }
 }

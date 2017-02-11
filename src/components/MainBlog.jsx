@@ -1,41 +1,44 @@
 import React, { Component } from 'react'
-import CreateButton from './Buttons/CreateButton.jsx'
-import EditButton from './Buttons/EditButton.jsx'
+import FontAwesome from 'react-fontawesome'
+
 import DeleteButton from './Buttons/DeleteButton.jsx'
 import ModalCreatePost from './ModalCreatePost.jsx'
 import ModalEditPost from './ModalEditPost.jsx'
-import { Modal, Button } from 'elemental'
+
 
 export default class MainBlog extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
+
   render() {
+    const post = this.props.post
     return (
         <div className="mainBlog">
-          <h1>title</h1>
-          <p> Welcome </p>
-          <CreateButton className="createPostButton"/>
-          <ModalCreatePost />
+          <ModalCreatePost id="createPostModal" />
           <div className="postContainer">
             <div className="postHeader" id="blogEntryid">
-              <h2> title </h2>
-              <p> normalizeDate(post_date)</p>
+              <h2>{post.title}</h2>
+              <p>{post.post_date}</p>
             </div>
             <div className="textBody">
-              <p> blog_entry </p>
+              <p> {post.blog_entry} </p>
             </div>
             <div className="imageContainer">
-              <img src="http://matthewepierce.com/wp-content/uploads/2015/10/democrats.jpg" />
+              <img src={post.image_url} />
             </div>
             <div className="tagContainer">
-              <p> tags </p>
-              <p> comments </p>
+              <p> {post.tags} </p>
             </div>
             <div className="buttonControls">
-              <EditButton className="editButton" />
-              <DeleteButton className="deleteButton" />
+              <DeleteButton className="deleteButton" post={post}/>
+              <ModalEditPost id="editPostModal" post={post}/>
             </div>
-            <ModalEditPost id="editPostModal"/>
           </div>
         </div>
     )
   }
+
 }
