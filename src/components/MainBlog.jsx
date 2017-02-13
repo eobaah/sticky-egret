@@ -23,11 +23,11 @@ export default class MainBlog extends Component {
               <h2>{post.title}</h2>
               <p>{post.post_date}</p>
             </div>
-            <div className="textBody">
-              <p> {post.blog_entry} </p>
-            </div>
             <div className="imageContainer">
               <img src={post.image_url} />
+            </div>
+            <div className="textBody">
+              <p> {post.blog_entry} </p>
             </div>
             <div className="tagContainer">
               <p> {post.tags} </p>

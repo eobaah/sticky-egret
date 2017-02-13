@@ -54,7 +54,7 @@ export default class App extends Component {
       <div className="topContainer">
         <NavBar className="NavBar"/>
         <div className="blogContainer">
-            <div>{blogTitles}</div>
+            <div className="blogSection">{blogTitles}</div>
           <Sidebar />
         </div>
       </div>

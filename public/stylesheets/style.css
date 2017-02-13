@@ -1,12 +1,86 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 2%;
+  font: 14px "Droid Sans", Helvetica, Arial, sans-serif;
+  transition: background-color .5s;
+  background-color: rgb(232, 231, 230);
 }
 
-.topNavigation{
+/* =================================
+  Side Navigation Menu
+==================================== */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #07272d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+
+/* =================================
+Navigation
+==================================== */
+/*navigation menu styling for the mobile view*/
+
+p {
+  font-size: 1.5em;
+  line-height: 160%;
+}
+.navBar {
+
+}
+.navBar ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: #303f9f;
+  color: #fff;
+  height: 4em;
+  cursor: pointer;
+  font-size: 1.5em;
 }
 
 .topNavigation li {
@@ -19,27 +93,41 @@ body {
   flex-direction: column;
 }
 
+
 .blogContainer {
   display: flex;
   flex-direction: row;
 }
 
-.mainBlogs {
+.blogSection {
   width: 70%;
+  padding: 1% 0;
+}
+
+
+.textBody {
+  border-bottom: 1px solid rgb(184, 191, 183);
 }
 
 .posts {
   order: 1;
   width: 30%;
+  margin: 1% 0;
 }
 
 .mainBlog {
-  flex-grow: 3;
-  width: 70%;
-  margin: 5% 2%;
-  padding: 0 0 3% 0;
+  margin: 1% 0;
   border-bottom: 1px solid rgb(184, 191, 183);
-
+  background-color: #fff;
+  padding: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.PostEntry {
+  margin: 2% 0 2% 2%;
+  padding: 3%;
+  border-bottom: 1px solid rgb(184, 191, 183);
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modalPost {
@@ -59,8 +147,9 @@ a {
 
 .fa {
   cursor: pointer;
-
+  font-size: 2em;
 }
+
 .deletePostBtn {
   margin-right: 3%;
   display: flex;
@@ -72,14 +161,16 @@ a {
 }
 
 .editButton {
-  margin-left: 24%;
+  margin: 0 5% 0 24%;
   display: flex;
   flex-direction: row;
 }
-
+.fa-edit:before, .fa-pencil-square-o:before {
+  margin-right: 10%;
+}
 .imageContainer img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 .createInput {
   margin: 3% 0;
@@ -89,14 +180,24 @@ a {
   display: flex;
   flex-direction: column;
 }
+/* =================================
+  Media Queries: Tablet view
+==================================== */
 
-.navBar ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  background-color: #303f9f;
-  color: #fff;
-  height: 4em;
+@media (min-width: 768px) {
+
+  .mobile-view {
+    display:none;
+
+  }
+}
+
+/* =================================
+  Media Queries: Tablet view
+==================================== */
+
+@media (min-width: 1024px) {
+
+  .mobile-view {
+    display:none;
 }

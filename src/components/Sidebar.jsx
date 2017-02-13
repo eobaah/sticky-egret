@@ -5,24 +5,64 @@ export default class Sidebar extends Component {
     return (
       <div className="posts">
         <div className="PostEntry">
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
+          <h2> January Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
         </div>
         <div className="PostEntry">
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
+          <h2> December Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
         </div>
         <div className="PostEntry">
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
+          <h2> November Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
         </div>
         <div className="PostEntry">
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
-          <h1> He won the game </h1>
+          <h2> October Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> January Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> December Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> November Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> October Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> January Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> December Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> November Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
+        </div>
+        <div className="PostEntry">
+          <h2> October Posts </h2>
+          <p> He won the game </p>
+          <p> He won the game </p>
         </div>
       </div>
     )

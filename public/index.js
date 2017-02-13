@@ -26333,7 +26333,7 @@ var App = function (_Component) {
           { className: 'blogContainer' },
           _react2.default.createElement(
             'div',
-            null,
+            { className: 'blogSection' },
             blogTitles
           ),
           _react2.default.createElement(_Sidebar2.default, null)
@@ -26395,7 +26395,7 @@ var DeleteButton = function (_Component) {
           'form',
           { action: '/delete/' + this.props.post.id, method: 'POST' },
           _react2.default.createElement(
-            'i',
+            'button',
             { className: 'fa fa-trash-o deletePostBtn', type: 'submit', value: 'Submit', formMethod: 'post' },
             ' Delete'
           )
@@ -26486,6 +26486,11 @@ var MainBlog = function (_Component) {
           ),
           _react2.default.createElement(
             'div',
+            { className: 'imageContainer' },
+            _react2.default.createElement('img', { src: post.image_url })
+          ),
+          _react2.default.createElement(
+            'div',
             { className: 'textBody' },
             _react2.default.createElement(
               'p',
@@ -26494,11 +26499,6 @@ var MainBlog = function (_Component) {
               post.blog_entry,
               ' '
             )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'imageContainer' },
-            _react2.default.createElement('img', { src: post.image_url })
           ),
           _react2.default.createElement(
             'div',
@@ -26787,17 +26787,17 @@ var Sidebar = function (_Component) {
           "div",
           { className: "PostEntry" },
           _react2.default.createElement(
-            "h1",
+            "h2",
+            null,
+            " January Posts "
+          ),
+          _react2.default.createElement(
+            "p",
             null,
             " He won the game "
           ),
           _react2.default.createElement(
-            "h1",
-            null,
-            " He won the game "
-          ),
-          _react2.default.createElement(
-            "h1",
+            "p",
             null,
             " He won the game "
           )
@@ -26806,17 +26806,17 @@ var Sidebar = function (_Component) {
           "div",
           { className: "PostEntry" },
           _react2.default.createElement(
-            "h1",
+            "h2",
+            null,
+            " December Posts "
+          ),
+          _react2.default.createElement(
+            "p",
             null,
             " He won the game "
           ),
           _react2.default.createElement(
-            "h1",
-            null,
-            " He won the game "
-          ),
-          _react2.default.createElement(
-            "h1",
+            "p",
             null,
             " He won the game "
           )
@@ -26825,17 +26825,17 @@ var Sidebar = function (_Component) {
           "div",
           { className: "PostEntry" },
           _react2.default.createElement(
-            "h1",
+            "h2",
+            null,
+            " November Posts "
+          ),
+          _react2.default.createElement(
+            "p",
             null,
             " He won the game "
           ),
           _react2.default.createElement(
-            "h1",
-            null,
-            " He won the game "
-          ),
-          _react2.default.createElement(
-            "h1",
+            "p",
             null,
             " He won the game "
           )
@@ -26844,17 +26844,169 @@ var Sidebar = function (_Component) {
           "div",
           { className: "PostEntry" },
           _react2.default.createElement(
-            "h1",
+            "h2",
+            null,
+            " October Posts "
+          ),
+          _react2.default.createElement(
+            "p",
             null,
             " He won the game "
           ),
           _react2.default.createElement(
-            "h1",
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " January Posts "
+          ),
+          _react2.default.createElement(
+            "p",
             null,
             " He won the game "
           ),
           _react2.default.createElement(
-            "h1",
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " December Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " November Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " October Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " January Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " December Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " November Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "PostEntry" },
+          _react2.default.createElement(
+            "h2",
+            null,
+            " October Posts "
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            " He won the game "
+          ),
+          _react2.default.createElement(
+            "p",
             null,
             " He won the game "
           )
