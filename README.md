@@ -17,8 +17,8 @@ Creating this web application will provide exposure to:
 
 
 ## Specifications (100% total) [Github](https://github.com/eobaah/guarded-porcupine)
-- [ ] Make a wireframe of app (5%)
-- [ ] Use responsive design principles (make it mobile first!)(5%)
+- [X] Make a wireframe of app (5%)
+- [X] Use responsive design principles (make it mobile first!)(5%)
 
 User should be able to:
 - [X] See a feed of recent blog posts. (3%)
@@ -35,10 +35,10 @@ User should be able to:
 ## Quality Rubric (100% total)
 - [ ] Provide instructions for a reviewer to download a fully functioning version of the app (10%)
 - [ ] Submit a Prrr per day to improve code quality (10%)
-- [ ] All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
-- [ ] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
-- [ ]Code is well organized into a meaningful file  structure (20%)
-- [ ]Interface is user friendly (10%)
+- [X] All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
+- [X] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
+- [X]Code is well organized into a meaningful file  structure (20%)
+- [X]Interface is user friendly (10%)
 - [ ]Create tests to ensure routes are fully functioning (5%)
 - [ ]Create tests to ensure our database queries are able to retrieve all posts (5%)
 
@@ -53,7 +53,7 @@ Optional for those wishing to add a database to their blog site: [SQL Basics tra
 |Day| Mon | Tues | Wed | Thurs | Fri | Sat |Sun|
 |------------|------------|------------|------------|------------|------------|------------ |------------ |
 ||design UI; setup server; create schema and connect to the database; display content in app|implemented create, read, update, delete|complete CRUD; focus on UI and UX |implement react|implement react|||
-|Time|5 hrs|5 hrs|6.5 hrs|0 hrs|0 hrs|TBD|TBD
+|Time|5 hrs|5 hrs|6.5 hrs|7 hrs|7.5 hrs|TBD|TBD
 
 
 
